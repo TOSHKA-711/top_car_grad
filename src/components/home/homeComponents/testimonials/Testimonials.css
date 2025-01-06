@@ -1,0 +1,46 @@
+
+.testimonials{
+    padding:0 10rem 5rem;
+}
+
+.title{
+    color: #1e5dbc;
+    font-weight: 600;
+
+}
+.testimonials h2{
+    color: #2b4448;
+    font-size: 26px;
+    line-height: 27px;
+}
+
+.cards{
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.cards .card{
+    background-color: #fff;
+    padding: 30px;
+}
+
+.card img.vector{
+    width: 25px;
+    object-fit: cover;
+}
+.card p{
+color: #2B4448;
+line-height: 20px;
+}
+
+.card .avatar img{
+object-fit: contain;
+width: 3rem;
+}
+
+.card .avatar h3{
+    color: #1e5dbc;
+}
+.card .avatar p{
+    color: #2B4448;
+    line-height: 20px;
+}

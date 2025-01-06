@@ -1,0 +1,80 @@
+.navbar {
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+}
+
+.navbar .logo img{
+    width: 4rem;
+}
+.navbar .links a,
+.navbar .contact-btn a {
+  font-size: 20px;
+  font-weight: 600;
+}
+.navbar .links a {
+  position: relative;
+  transition: all ease-in-out 0.3s;
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -ms-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  color: #000;
+}
+.navbar .links a:hover {
+  color: #1e5dbc;
+}
+.navbar .links a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 0%;
+  height: 3px;
+  background-color: #1e5dbc;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all ease-in-out 0.3s;
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -ms-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+}
+.navbar .links a:hover::before {
+  width: 100%;
+}
+
+.navbar .contact-btn {
+  background-color: #1e5dbc;
+  padding: 5px 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: 2px solid #1e5dbc;
+  transition: all ease-in-out 0.3s;
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -ms-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+}
+.navbar .contact-btn a {
+  color: #fff;
+}
+.navbar .contact-btn:hover {
+  background-color: #fff;
+  color: #1e5dbc;
+
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+.navbar .contact-btn:hover a {
+  color: #1e5dbc;
+}

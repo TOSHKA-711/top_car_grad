@@ -1,0 +1,106 @@
+.contact {
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5rem 0;
+    position: relative;
+  }
+  .contact .contact-img {
+    width: 75%;
+    height: 570px;
+    object-fit: fill;
+  }
+  
+  .contact-card {
+    position: absolute;
+    background-color: #fff;
+    right: 27%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    -webkit-transform: translate(50%, -50%);
+    -moz-transform: translate(50%, -50%);
+    -ms-transform: translate(50%, -50%);
+    -o-transform: translate(50%, -50%);
+    padding:  10px ;
+}
+  
+.contact-card .card-text h2{
+    text-align: center;
+}
+.contact-card input{
+    outline: none;
+    padding: 5px 90px 5px 10px;
+    border: 1px solid #BDBDBD;
+}
+.contact-card textarea{
+    outline: none;
+    padding: 5px 10px;
+    border: 1px solid #BDBDBD;
+    resize: none;
+}
+.contact-card button{
+  align-items: flex-start;
+}
+  .card-text {
+    padding: 25px;
+  }
+  .card-text .title {
+    color: #1e5dbc;
+    font-weight: 600;
+  }
+  .card-text h2 {
+    color: #2b4448;
+    font-size: 26px;
+    line-height: 27px;
+  }
+  .card-text p {
+    color: #2b4448;
+    line-height: 23px;
+  }
+  .card-text img {
+    margin-top: 10px;
+  }
+  
+  .contact-card button {
+      border: 2px solid #1e5dbc;
+      background-color: #1e5dbc;
+      color: #fff;
+      padding: 5px 20px;
+      font-size: 17px;
+  
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    .contact-text {
+        position: absolute;
+        left: 22%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        color: #fff;
+}
+
+.contact-text .title{
+    color: #fff;
+    font-weight: 600;
+}
+
+.contact-text h2 {
+    font-size: 26px;
+    line-height: 27px;
+  }
+  .contact-text p {
+    line-height: 23px;
+  }
+
+  .contact-text img.location{
+margin-top: 15px;
+width: 17rem;
+  }
