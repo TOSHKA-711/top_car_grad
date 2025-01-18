@@ -6,7 +6,7 @@ import Most from './searchComponents/most/Most'
 export default function Search() {
   return (
     <div className='search'>
-    <Hero/>
+    <Hero height={"40rem"} BannersImg={true}/>
     <Most/>
     </div>
   )

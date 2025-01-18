@@ -1,0 +1,87 @@
+.car-information {
+  padding: 2rem 2rem 3rem;
+}
+
+.header {
+  align-items: flex-start;
+}
+.header .icons span {
+  color: #0000be;
+  background-color: rgb(207 235 253);
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.info-body img {
+  flex: 6;
+  width: 100%;
+  height: 55vh;
+  object-fit: fill;
+}
+.info-body .details {
+  flex: 2;
+}
+.info-body .details .price {
+  align-items: flex-start;
+  background-color: #fff;
+  padding: 20px 20px 5px;
+  border-radius: 6px;
+}
+.info-body .details .price h1 {
+  line-height: 25px;
+}
+
+.info-body .details .price button {
+  border: 2px solid #1e5dbc;
+  background-color: #1e5dbc;
+  color: #fff;
+  padding: 2px 10px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin: 20px 0;
+  width: 100%;
+}
+.info-body .details .price button:hover {
+  background-color: #fff;
+  color: #1e5dbc;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
+
+
+.info-body .specifications {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 6px;
+}
+.info-body .specifications .child {
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.info-body .specifications .icon {
+  color: #0000be;
+  background-color: rgb(207 235 253);
+  padding: 5px 10px;
+  border-radius: 20px;
+}

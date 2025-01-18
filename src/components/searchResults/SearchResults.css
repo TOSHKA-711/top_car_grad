@@ -1,0 +1,14 @@
+
+.search-results{
+    padding: 0 30px 50px;
+    align-items: flex-start;
+    margin-top: -3rem;
+    gap: 20px;
+}
+
+.search-results .results{
+    flex-wrap: wrap;
+    gap: 40px 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
