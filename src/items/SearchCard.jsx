@@ -7,14 +7,14 @@ import { FaGasPump } from "react-icons/fa";
 import { MdOutlineControlCamera } from "react-icons/md";
 import { MyContext } from "../store/ContextApi";
 
-export default function SearchCard({image , price , brand , condition}) {
+export default function SearchCard({image , price , brand , condition , color}) {
     const { fetchedData, setFetchedData, detailsData, setDetailsData } =
     useContext(MyContext);
 
     
     const handleCardClick =()=>{
         window.location="/carInformation" ;
-        setDetailsData({image , price , brand , condition})
+        setDetailsData({image , price , brand , condition , color})
     }
 
   return (

@@ -32,7 +32,7 @@ export default function Hero({ height, BannersImg }) {
         `http://localhost:3000/search?brand=${brand}&condition=${cars}&price=${price}`
       );
       setFetchedData(response.data);
-      console.log("results => ", response.data);
+      // console.log("results => ", response.data);
     } catch (error) {
       console.error("Error fetching data:", error);
     }

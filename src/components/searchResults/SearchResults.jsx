@@ -10,25 +10,24 @@ import Stack from "@mui/material/Stack";
 export default function SearchResults() {
   const { fetchedData, setFetchedData, detailsData, setDetailsData } =
     useContext(MyContext);
-  console.log(fetchedData);
+  // console.log(fetchedData);
   return (
     <>
       <Hero height={"25rem"} BannersImg={false} />
       <div className="search-results flex-col">
         <h1>Search Result</h1>
         <div className="results flex-row">
-          {fetchedData?.length != 0 ? (
-            fetchedData.map((item) => {
-              return (
-                <SearchCard
-                  key={item.index}
-                  price={item.price}
-                  brand={item.brand}
-                  condition={item.condition}
-                  image={item.image}
-                />
-              );
-            })
+          {(fetchedData?.length ?? 0) !== 0 ? (
+            fetchedData.map((item, index) => (
+              <SearchCard
+                key={item.id || `search-card-${index}`} // Ensure the key is unique
+                price={item.price}
+                brand={item.brand}
+                condition={item.condition}
+                image={item.image}
+                color={item.color}
+              />
+            ))
           ) : (
             <div
               className="flex-row"
@@ -36,12 +35,29 @@ export default function SearchResults() {
             >
               {Array.from({ length: 6 }).map((_, index) => (
                 <Stack key={index} spacing={1}>
-                  {/* For variant="text", adjust the height via font-size */}
-                  <Skeleton variant="text" sx={{ fontSize: "1rem" }} />
-                  {/* For other variants, adjust the size with `width` and `height` */}
-                  <Skeleton variant="circular" width={40} height={40} />
-                  <Skeleton variant="rectangular" width={210} height={60} />
-                  <Skeleton variant="rounded" width={210} height={60} />
+                  <Skeleton
+                    variant="text"
+                    sx={{ fontSize: "1rem" }}
+                    aria-label="Loading content"
+                  />
+                  <Skeleton
+                    variant="circular"
+                    width={40}
+                    height={40}
+                    aria-label="Loading image"
+                  />
+                  <Skeleton
+                    variant="rectangular"
+                    width={210}
+                    height={60}
+                    aria-label="Loading content"
+                  />
+                  <Skeleton
+                    variant="rounded"
+                    width={210}
+                    height={60}
+                    aria-label="Loading content"
+                  />
                 </Stack>
               ))}
             </div>

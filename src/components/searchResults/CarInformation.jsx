@@ -75,7 +75,7 @@ export default function CarInformation() {
                 <IoMdColorPalette className="icon"/>
                 Color
               </span>
-              <span>Black</span>
+              <span>{detailsData.color}</span>
             </div>
             <div className="child flex-row">
               <span className=" flex-row flex-center gap5">
