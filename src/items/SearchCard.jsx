@@ -1,21 +1,20 @@
 import React, { useContext } from "react";
-import "./SearchCard.css"
-
+import "./SearchCard.css";
+import { useNavigate } from "react-router-dom";
 
 import { RxCounterClockwiseClock } from "react-icons/rx";
 import { FaGasPump } from "react-icons/fa";
 import { MdOutlineControlCamera } from "react-icons/md";
 import { MyContext } from "../store/ContextApi";
 
-export default function SearchCard({image , price , brand , condition , color}) {
-    const { fetchedData, setFetchedData, detailsData, setDetailsData } =
-    useContext(MyContext);
+export default function SearchCard({ image, price, brand, condition, color }) {
+  const { setDetailsData } = useContext(MyContext);
+  const navigate = useNavigate();
 
-    
-    const handleCardClick =()=>{
-        window.location="/carInformation" ;
-        setDetailsData({image , price , brand , condition , color})
-    }
+  const handleCardClick = () => {
+    navigate("/carInformation");
+    setDetailsData({ image, price, brand, condition, color });
+  };
 
   return (
     <div className="search-card flex-col" onClick={handleCardClick}>
