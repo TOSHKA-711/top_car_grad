@@ -17,13 +17,14 @@ export default function NavBar() {
         <Link className="transition" to="/">
           Home
         </Link>
-        <a className="transition" href="#about">
+        {/* <a className="transition" href="#about">
           About Us
-        </a>
-        <a className="transition" href="#message">
+        </a> */}
+        <a className="transition" href="/#message">
           Message
         </a>
-        <Link className="transition" to="/search">Search</Link>
+        <Link className="transition" to="/search">Buy</Link>
+        <Link className="transition" to="/sale">Sale</Link>
       </div>
       <div className="contact-btn transition">
         <a href="tel:+201228099652">Contact US</a>

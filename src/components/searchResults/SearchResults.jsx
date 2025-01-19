@@ -8,9 +8,9 @@ import Skeleton from "@mui/material/Skeleton";
 import Stack from "@mui/material/Stack";
 
 export default function SearchResults() {
-  const { fetchedData, setFetchedData, detailsData, setDetailsData } =
+  const { fetchedData} =
     useContext(MyContext);
-  // console.log(fetchedData);
+  console.log(fetchedData);
   return (
     <>
       <Hero height={"25rem"} BannersImg={false} />
@@ -24,7 +24,7 @@ export default function SearchResults() {
                 price={item.price}
                 brand={item.brand}
                 condition={item.condition}
-                image={item.image}
+                image={item.image  } 
                 color={item.color}
               />
             ))

@@ -16,15 +16,29 @@ export default function SearchCard({ image, price, brand, condition, color }) {
     setDetailsData({ image, price, brand, condition, color });
   };
 
+  // صورة افتراضية عند غياب الصورة
+  const defaultImage = "https://via.placeholder.com/200x150?text=No+Image";
+
   return (
     <div className="search-card flex-col" onClick={handleCardClick}>
-      <img src={image} />
+      <img
+        src={
+          image
+            ? image.startsWith("http")
+              ? image // رابط خارجي للصورة
+              : `http://localhost:3000${image}` // مسار صورة تم رفعها
+            : defaultImage // صورة افتراضية
+        }
+        alt={brand || "Car"}
+        
+      />
+
       <div className="text flex-col">
-        <h2>{brand}</h2>
+        <h2>{brand || "Unknown Brand"}</h2>
         <div className="details flex-row flex-center">
           <span className="info flex-col flex-center">
             <RxCounterClockwiseClock />
-            {condition}
+            {condition || "Unknown"}
           </span>
           <span className="info flex-col flex-center">
             <FaGasPump />
@@ -36,7 +50,7 @@ export default function SearchCard({ image, price, brand, condition, color }) {
           </span>
         </div>
         <div className="price flex-row flex-center">
-          <h2>{price}$</h2>
+          <h2>{price ? `${price}$` : "N/A"}</h2>
           <p>View Details</p>
         </div>
       </div>

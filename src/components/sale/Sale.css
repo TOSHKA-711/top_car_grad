@@ -1,0 +1,95 @@
+.sale {
+    align-items: center;
+  background-color: rgb(238 240 252 / 1);
+  padding: 50px 0 0;
+  height: 45rem ;
+  gap: 0px;
+  position: relative;
+  /* margin-bottom: 5rem; */
+}
+
+.sale p {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.sale h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 7rem;
+}
+
+
+/* ----------------- */
+.sale-bar {
+    background-color: #fff;
+    padding: 30px 40px 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    gap: 35px;
+    width: 20rem;
+  }
+
+  .sale-bar .select{
+    width: 100%;
+    position: relative;
+  }
+  .sale-bar .select input{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 1px rgba(157,157,157,0.75);
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(157,157,157,0.75);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(157,157,157,0.75);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+  .sale-bar .select p{
+    position: absolute;
+    top: -30px;
+    left: 0;
+    color: rgb(91, 91, 91);
+  }
+  
+  
+  .icon {
+    background-color: #1e5dbc;
+    color: #fff;
+    font-size: 35px;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+  }
+  .icon:hover {
+   background-color: #fff;
+   color: #1e5dbc;
+   scale:1.1;
+   transform: rotate(45deg);
+   -webkit-transform: rotate(45deg);
+   -moz-transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   -o-transform: rotate(45deg);
+  }
+  
+ 
+  
+  
+
+
+
+  /* ---------------- */
+  .css-hs8t5g-MuiFormControl-root {
+    margin: unset !important;
+    width: 100%;
+}
