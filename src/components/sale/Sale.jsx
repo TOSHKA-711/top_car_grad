@@ -8,8 +8,10 @@ import Select from "@mui/material/Select";
 import { IoMdAdd } from "react-icons/io";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 export default function Sale() {
+  const navigate = useNavigate();
   const [payload, setPayload] = useState({
     image: "",
     brand: "",
@@ -25,8 +27,8 @@ export default function Sale() {
   const handleSearch = async () => {
     try {
       const response = await axios.post(`http://localhost:3000/cars`, payload);
-      console.log(response.data);
-      window.location = "/search";
+      window.alert(response.data)
+      navigate("/search");
     } catch (error) {
       console.error("Error fetching data:", error);
     }
@@ -95,7 +97,7 @@ export default function Sale() {
             onChange={handleInputChange}
             name="image"
           />
-           <p>Image</p>
+          <p>Image</p>
         </div>
         <Link
           to=""
