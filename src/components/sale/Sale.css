@@ -1,8 +1,8 @@
 .sale {
-    align-items: center;
+  align-items: center;
   background-color: rgb(238 240 252 / 1);
   padding: 50px 0 0;
-  height: 45rem ;
+  height: 50rem ;
   gap: 0px;
   position: relative;
   /* margin-bottom: 5rem; */
@@ -17,6 +17,8 @@
     font-weight: 700;
     line-height: 7rem;
 }
+
+
 
 
 /* ----------------- */

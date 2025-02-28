@@ -1,0 +1,158 @@
+
+.contact {
+    background: #eee;
+    width: 100vw;
+    padding: 5vh 0 5vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-left: 3rem; */
+   
+  
+}
+  .contact .location {
+    position: relative;
+    width: 90%;
+    padding-bottom: 35%; /* Adjust this value as needed to control aspect ratio */
+    height: 0;
+    box-shadow: 3px 2px 5px 0px rgba(0, 0, 0, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+  .location iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  
+}
+  @media screen and (max-width: 992px) {
+    .contact {
+      flex-direction: column-reverse;
+      padding-left: 0rem;
+      gap: 2rem;
+    }
+  }
+  @media screen and (max-width: 721px) {
+    .contact .location {
+      position: relative;
+      width: 70%;
+      padding-bottom: 40%; /* Adjust this value as needed to control aspect ratio */
+      height: 0;
+    }
+  }
+  .contact h2.rev-top {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    background-image: url(https://infoglobe.com.kw/content/images/title-bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    margin-top: -1rem;
+    color: #1c2941;
+
+  }
+  .contact h1 {
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    font-size: 62.5%;
+  }
+  
+  .contact form {
+    max-width: 50rem;
+    margin: 1rem auto;
+    /* margin-bottom: 3rem; */
+    text-align: center;
+    font-size: 62.5%;
+  }
+  
+  .input-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .input-box input,
+  form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    border-radius: 0.8rem;
+    -webkit-border-radius: 0.8rem;
+    -moz-border-radius: 0.8rem;
+    -ms-border-radius: 0.8rem;
+    -o-border-radius: 0.8rem;
+    margin: 0.7rem 0;
+    
+  }
+  
+  .input-box input {
+    width: 49%;
+  }
+  form textarea {
+    resize: none;
+    height: 12rem;
+  }
+  .contact .button {
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding: 8px 30px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 3px solid rgb(30, 152, 197);
+    margin: 2rem;
+    color: #6c6969;
+  }
+  .contact .button:hover {
+    background-color: rgb(30, 152, 197);
+    color: #fff;
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+  }
+  
+  @media screen and (min-width: 767px) and (max-width: 1023px) {
+  }
+  
+  /* mobile  */
+  @media screen and (max-width: 767px) {
+    .contact {
+      width: 100vw;
+    }
+  
+    form textarea {
+      width: 80%;
+    }
+  }
+  @media screen and (max-width: 499px) {
+    form textarea {
+      resize: none;
+      width: fit-content;
+      height: 12rem;
+      display: block;
+      margin: inherit;
+      width: 80%;
+    }
+    .contact {
+      width: 100%;
+    }
+    .input-box input {
+      width: 65%;
+    }
+  }
+  
+  /* --------------- end contact us ---------------------- */

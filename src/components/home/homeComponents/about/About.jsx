@@ -16,14 +16,17 @@ export default function About() {
             <img src={carsBlue} />
             WHO WE ARE
           </span>
-          <h2>Car Service repairs and <br/> maintenance Certified </h2>
+          <h2>
+            Car Service repairs and <br /> maintenance Certified{" "}
+          </h2>
+
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br/> Ut elit
-            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.<br/> Turpis
-            egestas sed tempus urna et pulvinar semleko
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Ut
+            elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            <br /> Turpis egestas sed tempus urna et pulvinar semleko
           </p>
         </div>
-        <img src={img2} alt="image"/>
+        <img src={img2} alt="image" />
       </div>
     </div>
   );

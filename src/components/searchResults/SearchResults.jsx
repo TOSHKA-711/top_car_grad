@@ -26,6 +26,7 @@ export default function SearchResults() {
                 condition={item.condition}
                 image={item.image  } 
                 color={item.color}
+                model={item.model}
               />
             ))
           ) : (
