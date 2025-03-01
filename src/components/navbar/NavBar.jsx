@@ -14,7 +14,7 @@ export default function NavBar() {
       </div>
 
       {location.pathname === "/register" || location.pathname === "/" ? (
-        <h1 style={{color:"#1E5DBC"}}>Top Services</h1>
+        <h1 style={{color:"#1E5DBC"}}>Top Car</h1>
       ) : (
         <div className="links flex-row gap35">
           <Link className="transition" to="/home">
@@ -33,7 +33,10 @@ export default function NavBar() {
       )}
 
       <div className="contact-btn transition">
-        <a href="tel:+201228099652">Contact US</a>
+        {/* <a href="tel:+201228099652">Contact US</a> */}
+        <Link className="transition" to="/message">
+            Contact Us
+          </Link>
       </div>
     </div>
   );
