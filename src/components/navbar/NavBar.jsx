@@ -13,7 +13,7 @@ export default function NavBar() {
         <img src={logo} alt="logo" />
       </div>
 
-      {location.pathname === "/register" || location.pathname === "/" ? (
+      {location.pathname === "/register" || location.pathname === "/" || location.pathname === "/message" ? (
         <h1 style={{color:"#1E5DBC"}}>Top Car</h1>
       ) : (
         <div className="links flex-row gap35">
